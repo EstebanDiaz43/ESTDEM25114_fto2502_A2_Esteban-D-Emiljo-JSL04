@@ -322,6 +322,10 @@ h2 {
     padding: 24px;
   }
 
+  #header-board-name {
+    display: none; /* Hide board name on mobile */
+  }
+
   .addnewtask-btn {
     font-family: inherit;
     display: flex;
