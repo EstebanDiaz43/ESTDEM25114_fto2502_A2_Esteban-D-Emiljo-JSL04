@@ -119,6 +119,24 @@ header {
   display: none; /* Hidden on desktop; shown on smaller screens */
 }
 
+.addnewtask-btn {
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  background-color: #635fc7;
+  color: #fff;
+  border: none;
+  border-radius: 100px; /* Pill shape only on right side */
+  height: 48px;
+  width: 276px;
+  padding: 28px 12px 28px 50px;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden; /* Prevents overflowed text/icons from showing */
+}
+
 /* ===============
      Board Columns
   ================ */
