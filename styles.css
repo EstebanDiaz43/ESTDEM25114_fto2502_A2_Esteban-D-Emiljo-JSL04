@@ -119,7 +119,7 @@ header {
   display: none; /* Hidden on desktop; shown on smaller screens */
 }
 
-.addnewtask-btn-v1 {
+.addnewtask-btn {
   font-family: inherit;
   display: flex;
   align-items: center;
@@ -320,5 +320,27 @@ h2 {
 
   .column-div {
     padding: 24px;
+  }
+
+  .addnewtask-btn {
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #635fc7;
+    color: #fff;
+    border: none;
+    border-radius: 100px; /* Pill shape button */
+    height: 33px;
+    width: 33px;
+    padding: 10px 10px 12px 10px;
+    font-size: 0.938rem;
+    font-weight: 700;
+    cursor: pointer;
+    overflow: hidden; /* Prevents overflowed text/icons from showing */
+  }
+
+  .addnewtask-btn-text {
+    display: none; /* Hidden on desktop; shown on smaller screens */
   }
 }
