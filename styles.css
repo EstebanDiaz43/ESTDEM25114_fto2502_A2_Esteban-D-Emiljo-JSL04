@@ -92,19 +92,41 @@ h4 {
   bottom: 0%; /* Position at the bottom of sidebar */
 }
 
-.toggleswitch-btn {
+.toggleswitch-div {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #f4f7fd;
   border: none;
-  border-radius: 6px; /* Pill shape button */
+  border-radius: 6px;
   height: 48px;
   width: 251px;
   margin: 0px auto 20px 16px;
+  padding: 0px 64px 0px 64px;
   font-size: 0.9375rem;
+}
+
+.toggleswitch-btn {
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+
+  background-color: #635fc7;
+  border: none;
+  border-radius: 12px;
+  height: 20px;
+  width: 40px;
+  padding: 0px 5px 0px 5px;
   font-weight: bold;
-  cursor: pointer;
+}
+
+.toggleswitch-btn-circle {
+  background-color: #fff;
+  border-radius: 50%; /* Make it circular */
+  height: 14px;
+  width: 14px;
+  transition: all 0.3s ease; /* Smooth transition for toggle */
 }
 
 .sidebar-btn {
