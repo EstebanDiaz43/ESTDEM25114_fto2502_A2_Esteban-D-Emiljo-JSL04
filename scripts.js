@@ -50,8 +50,10 @@ const initialTasks = [
 ];
 
 var todoDiv = document.getElementById("todo-tasks");
+var doingDiv = document.getElementById("doing-tasks");
+var doneDiv = document.getElementById("done-tasks");
 
-initialTasks.forEach((element) => {
+initialTasks.forEach((task) => {
   // Create a new task element
   var taskDiv = document.createElement("div");
   taskDiv.className = "task-div";
