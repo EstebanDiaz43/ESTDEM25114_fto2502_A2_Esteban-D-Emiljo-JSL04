@@ -69,6 +69,9 @@ initialTasks.forEach((task) => {
   }
 });
 
+// This function updates the Kanban columns
+function updateCanban() {}
+
 // Keep adding tasks until there are 6 in total
 while (initialTasks.length < 6) {
   addTask();
@@ -108,6 +111,8 @@ function addTask() {
 
   initialTasks.push(newTask); // Add the task to the array
 }
+
+updateCanban();
 
 // Keep adding tasks until there are 6 in total
 const getCompletedTasks = () =>
