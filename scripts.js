@@ -1,42 +1,50 @@
 const initialTasks = [
   {
     id: 1,
-    title: "Launch Epic Career 🚀",
-    description: "Create a killer Resume",
+    title: "Launch Epic Career🚀",
+    description: "",
     status: "todo",
   },
   {
     id: 2,
-    title: "Master JavaScript 💛",
-    description: "Get comfortable with the fundamentals",
-    status: "doing",
-  },
-  {
-    id: 3,
-    title: "Keep on Going 🏆",
-    description: "You're almost there",
-    status: "doing",
-  },
-
-  {
-    id: 11,
-    title: "Learn Data Structures and Algorithms 📚",
-    description:
-      "Study fundamental data structures and algorithms to solve coding problems efficiently",
+    title: "Conquer React⚛️",
+    description: "",
     status: "todo",
   },
   {
-    id: 12,
-    title: "Contribute to Open Source Projects 🌐",
-    description:
-      "Gain practical experience and collaborate with others in the software development community",
+    id: 3,
+    title: "Understand Databases⚙️",
+    description: "",
+    status: "todo",
+  },
+  {
+    id: 4,
+    title: "Crush Frameworks🖼️",
+    description: "",
+    status: "todo",
+  },
+  {
+    id: 5,
+    title: "Master JavaScript💛",
+    description: "",
+    status: "doing",
+  },
+  {
+    id: 6,
+    title: "Never Give Up🏆",
+    description: "",
+    status: "doing",
+  },
+  {
+    id: 7,
+    title: "Explore ES6 Features🚀",
+    description: "",
     status: "done",
   },
   {
-    id: 13,
-    title: "Build Portfolio Projects 🛠️",
-    description:
-      "Create a portfolio showcasing your skills and projects to potential employers",
+    id: 8,
+    title: "Have fun 🥳",
+    description: "",
     status: "done",
   },
 ];
