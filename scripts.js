@@ -46,7 +46,17 @@ var todoDiv = document.getElementById("todo-tasks");
 initialTasks.forEach((element) => {
   // Create a new task element
   var taskDiv = document.createElement("div");
+  taskDiv.className = "task-div";
   taskDiv.innerText = task.title;
+
+  // Create a new task title element
+  if (task.status === "todo") {
+    todoDiv.appendChild(taskDiv);
+  } else if (task.status === "doing") {
+    doingDiv.appendChild(taskDiv);
+  } else if (task.status === "done") {
+    doneDiv.appendChild(taskDiv);
+  }
 });
 
 // Keep adding tasks until there are 6 in total
