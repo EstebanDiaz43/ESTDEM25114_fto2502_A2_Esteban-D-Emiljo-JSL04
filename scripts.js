@@ -41,6 +41,14 @@ const initialTasks = [
   },
 ];
 
+var todoDiv = document.getElementById("todo-tasks");
+
+initialTasks.forEach((element) => {
+  // Create a new task element
+  var taskDiv = document.createElement("div");
+  taskDiv.innerText = task.title;
+});
+
 // Keep adding tasks until there are 6 in total
 while (initialTasks.length < 6) {
   addTask();

@@ -111,7 +111,6 @@ h4 {
   font-family: inherit;
   display: flex;
   align-items: center;
-
   background-color: #635fc7;
   border: none;
   border-radius: 12px;
@@ -119,6 +118,7 @@ h4 {
   width: 40px;
   padding: 0px 5px 0px 5px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .toggleswitch-btn-circle {
