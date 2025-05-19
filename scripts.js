@@ -52,36 +52,25 @@ const initialTasks = [
 var todoDiv = document.getElementById("todo-tasks");
 var doingDiv = document.getElementById("doing-tasks");
 var doneDiv = document.getElementById("done-tasks");
-
-initialTasks.forEach((task) => {
-  // Create a new task element
-  var taskDiv = document.createElement("div");
-  taskDiv.className = "task-div";
-  taskDiv.innerText = task.title;
-
-  // Create a new task title element
-  if (task.status === "todo") {
-    todoDiv.appendChild(taskDiv);
-  } else if (task.status === "doing") {
-    doingDiv.appendChild(taskDiv);
-  } else if (task.status === "done") {
-    doneDiv.appendChild(taskDiv);
-  }
-});
+updateCanban();
 
 // This function updates the Kanban columns
-function updateCanban() {}
+function updateCanban() {
+  initialTasks.forEach((task) => {
+    // Create a new task element
+    var taskDiv = document.createElement("div");
+    taskDiv.className = "task-div";
+    taskDiv.innerText = task.title;
 
-// Keep adding tasks until there are 6 in total
-while (initialTasks.length < 6) {
-  addTask();
-}
-
-// Alert user when task board is full
-if (initialTasks.length === 6) {
-  alert(
-    "There are enough tasks on your board, please check them in the console."
-  );
+    // Create a new task title element
+    if (task.status === "todo") {
+      todoDiv.appendChild(taskDiv);
+    } else if (task.status === "doing") {
+      doingDiv.appendChild(taskDiv);
+    } else if (task.status === "done") {
+      doneDiv.appendChild(taskDiv);
+    }
+  });
 }
 
 // Adds a new task by asking the user for input.
@@ -110,9 +99,9 @@ function addTask() {
   };
 
   initialTasks.push(newTask); // Add the task to the array
-}
 
-updateCanban();
+  updateCanban();
+}
 
 // Keep adding tasks until there are 6 in total
 const getCompletedTasks = () =>
