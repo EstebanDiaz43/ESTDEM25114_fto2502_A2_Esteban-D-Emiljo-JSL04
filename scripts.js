@@ -101,9 +101,26 @@ function addTask() {
   updateCanban();
 }
 
+// Updates the task values when clicked
 function setUpdateTaskValues(taskId) {
   currentTask = initialTasks.find((task) => task.id === +taskId);
   console.log(currentTask);
+  // Set the values in the edit form
+  document.getElementById("edit-task-title").value = currentTask.title;
+  document.getElementById("edit-task-description").value =
+    currentTask.description;
+  document.getElementById("edit-task-status").value = currentTask.status;
+}
+
+// Updates the task when the user clicks the update button
+function updateTask() {
+  currentTask.title = document.getElementById("edit-task-title").value;
+  currentTask.description = document.getElementById(
+    "edit-task-description"
+  ).value;
+  currentTask.status = document.getElementById("edit-task-status").value;
+
+  updateCanban();
 }
 
 // Keep adding tasks until there are 6 in total

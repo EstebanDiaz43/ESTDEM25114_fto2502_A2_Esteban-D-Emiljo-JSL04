@@ -95,6 +95,17 @@
           </div>
         </main>
       </div>
+      <div>
+        <h1>Update Task</h1>
+        <input id="edit-task-title" type="text" />
+        <textarea id="edit-task-description" type="text"></textarea>
+        <select id="edit-task-status">
+          <option value="todo">Todo</option>
+          <option value="doing">Doing</option>
+          <option value="done">Done</option>
+        </select>
+        <button onclick="updateTask()">Update task</button>
+      </div>
     </div>
   </body>
 </html>
