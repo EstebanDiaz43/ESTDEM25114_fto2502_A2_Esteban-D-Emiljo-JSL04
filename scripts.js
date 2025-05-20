@@ -65,7 +65,11 @@ function updateCanban() {
     // Create a new task element
     var taskDiv = document.createElement("div");
     taskDiv.className = "task-div";
+    taskDiv.setAttribute("id", task.id);
     taskDiv.innerText = task.title;
+    taskDiv.onclick = () => {
+      setUpdateTaskValues(taskDiv.getAttribute("id"));
+    };
 
     // Create a new task title element
     if (task.status === "todo") {
@@ -95,6 +99,11 @@ function addTask() {
   initialTasks.push(newTask); // Add the task to the array
 
   updateCanban();
+}
+
+function setUpdateTaskValues(taskId) {
+  currentTask = initialTasks.find((task) => task.id === +taskId);
+  console.log(currentTask);
 }
 
 // Keep adding tasks until there are 6 in total
