@@ -96,7 +96,7 @@
         </main>
       </div>
       <div>
-        <h1>Update Task</h1>
+        <h1>Edit Task</h1>
         <input id="edit-task-title" type="text" />
         <textarea id="edit-task-description" type="text"></textarea>
         <select id="edit-task-status">
@@ -105,6 +105,17 @@
           <option value="done">Done</option>
         </select>
         <button onclick="updateTask()">Update task</button>
+      </div>
+      <div>
+        <h1>Create Task</h1>
+        <input id="add-task-title" type="text" />
+        <textarea id="add-task-description" type="text"></textarea>
+        <select id="add-task-status">
+          <option value="todo">Todo</option>
+          <option value="doing">Doing</option>
+          <option value="done">Done</option>
+        </select>
+        <button onclick="addTask()">Create task</button>
       </div>
     </div>
   </body>
