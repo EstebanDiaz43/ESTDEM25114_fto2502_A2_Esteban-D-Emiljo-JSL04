@@ -81,20 +81,9 @@ function updateCanban() {
 // Adds a new task by asking the user for input.
 // Only allows 'todo', 'doing', or 'done' as status values.
 function addTask() {
-  const taskTitle = prompt("Enter task title:");
-  const taskDescription = prompt("Enter task description:");
-  let taskStatus = prompt(
-    "Enter task status (todo, doing, done):"
-  ).toLowerCase();
-
-  while (
-    taskStatus !== "todo" &&
-    taskStatus !== "doing" &&
-    taskStatus !== "done"
-  ) {
-    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
-    taskStatus = prompt("Enter task status (todo, doing, done):").toLowerCase();
-  }
+  const taskTitle = document.getElementById("add-task-title").value;
+  const taskDescription = document.getElementById("add-task-description").value;
+  const taskStatus = document.getElementById("add-task-status").value;
 
   const newTask = {
     id: initialTasks.length + 1, // Auto-increment ID based on task count
