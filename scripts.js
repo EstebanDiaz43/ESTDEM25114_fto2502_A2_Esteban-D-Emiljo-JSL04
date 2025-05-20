@@ -55,7 +55,12 @@ var doneDiv = document.getElementById("done-tasks");
 updateCanban();
 
 // This function updates the Kanban columns
+// Clear the existing tasks in the columns
 function updateCanban() {
+  todoDiv.innerHTML = "";
+  doingDiv.innerHTML = "";
+  doneDiv.innerHTML = "";
+
   initialTasks.forEach((task) => {
     // Create a new task element
     var taskDiv = document.createElement("div");
